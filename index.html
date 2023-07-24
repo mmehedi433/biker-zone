@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 15px 30px;
+            outline-color: transparent;
+        }
+
+        .btn-primary,
+        .btn-secondary:hover {
+            background: #e76f51;
+            border: 1px solid transparent;
+            color: #fff;
+        }
+
+        .btn-primary:hover,
+        .btn-secondary {
+            background-color: #fff;
+            color: #e76f51;
+            border: 1px solid #e76f51;
+        }
+    </style>
+</head>
+
+<body class="font-poppins space-y-20 md:space-y-32">
+    <header class="text-[#000] container mx-auto lg:px-20 md:space-y-5">
+        <div class="navbar">
+            <div class="flex-1">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="normal-case text-3xl font-bold" href="#">Biker Zone</a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <a class="btn btn-primary">Button</a>
+            </div>
+        </div>
+        <div class="banner">
+            <!-- Carosel -->
+            <div class="carousel w-full min-h-full bg-[#e76f511a]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div id="textAndSlider" class="flex flex-col md:flex-row px-5 py-10 lg:px-20">
+                        <div id="TEXTS" class="hero-content flex-col md:w-1/2 md:items-start space-y-8">
+                            <h1 class="text-6xl font-semibold"> Ride on BMW S 1000 RR with Smile </h1>
+                            <p class="text-[#000000cc]"> The BMW S 1000 RR is a quick, performance-driven higher-class
+                                bike that includes all the features one would anticipate from a sports bike in the
+                                market.<br /><br /> The S 1000 RR offers the best of both ways when used as a regular,
+                                performance-oriented road bike or a fun package sport bike for racing. </p>
+                            <button class="btn btn-primary"> Purchase </button>
+                        </div>
+                        <div id="SLIDER_" class="md:flex md:self-center md:w-1/2">
+                            <img src="images/slider/bike1.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div id="textAndSlider" class="flex flex-col md:flex-row px-5 py-10 lg:px-20">
+                        <div id="TEXTS" class="hero-content flex-col md:w-1/2 md:items-start space-y-8">
+                            <h1 class="text-6xl font-semibold"> Panigale V4 </h1>
+                            <p class="text-[#000000cc]"> The new Ducati Panigale V4 has an excellent capability that
+                                makes a superbike with over 200 horsepower incredibly safe and accessible around the
+                                racetrack.<br /><br /> Indeed, it's not designed for less experienced riders who are
+                                unfamiliar with liter-class superbikes. </p>
+                            <button class="btn btn-primary"> Purchase </button>
+                        </div>
+                        <div id="SLIDER_" class="md:flex md:self-center md:w-1/2">
+                            <img src="images/slider/bike2.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div id="textAndSlider" class="flex flex-col md:flex-row px-5 py-10 lg:px-20">
+                        <div id="TEXTS" class="hero-content flex-col md:w-1/2 md:items-start space-y-8">
+                            <h1 class="text-6xl font-semibold"> CBR 1000RR-R </h1>
+                            <p class="text-[#000000cc]"> The CBR is the series or family of Honda bikes, and CBR
+                                1000RR-R is the fastest Honda bike in the country. Honda CBR1000RR-R is a
+                                top-of-the-line superb bike with outstanding features and performance. <br /><br />It is
+                                a legacy sport bike with a long history and one of the top-liter-class superbikes
+                                available in India right now. </p>
+                            <button class="btn btn-primary"> Purchase </button>
+                        </div>
+                        <div id="SLIDER_" class="md:flex md:self-center md:w-1/2">
+                            <img src="images/slider/bike3.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div id="textAndSlider" class="flex flex-col md:flex-row px-5 py-10 lg:px-20">
+                        <div id="TEXTS" class="hero-content flex-col md:w-1/2 md:items-start space-y-8">
+                            <h1 class="text-6xl font-semibold"> Yamaha YZF R1M </h1>
+                            <p class="text-[#000000cc]"> The Yamaha "High Tech Armed Pure Sport" idea is the foundation
+                                for the YZF-R1 and R1M. This idea transforms these bikes into a full-on super-sport
+                                model outfitted with cutting-edge technology. <br /><br /> The manufacturer claims that
+                                these motorcycles will allow riders to understand the technological thinking behind
+                                Yamaha's MotoGP racing YZR-M1 machine. </p>
+                            <button class="btn btn-primary"> Purchase </button>
+                        </div>
+                        <div id="SLIDER_" class="md:flex md:self-center md:w-1/2">
+                            <img src="images/slider/bike4.png" class="w-full" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto lg:px-20 space-y-20 md:space-y-32">
+        <!-- Feratured Bikes Section -->
+        <section class="Featured_Bikes text-center px-5 lg:px-0">
+            <h2 class="text-5xl font-semibold mb-2"> Fetured Bikes of This Year </h2>
+            <p class="font-semibold text-sm text-[#E76F51]"> Our Best Bikes Collection </p>
+            <hr class="w-[50px] bg-[#E76F51] h-[2px] mx-auto" />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28 items-center mt-12">
+                <img src="images/slider/bike1.png" alt="" class="w-full h-fit" />
+                <img src="images/slider/bike3.png" alt="" class="w-full h-fit" />
+                <img src="images/slider/bike4.png" alt="" class="w-full h-fit" />
+            </div>
+        </section>
+        <!-- Latest Bikes -->
+        <section class="Featured_Bikes text-center px-5 lg:px-0">
+            <h2 class="text-5xl font-semibold mb-2">Latest Bikes</h2>
+            <p class="font-semibold text-sm text-[#E76F51]"> Know About Our Latest Bikes </p>
+            <hr class="w-[70px] bg-[#E76F51] h-[2px] mx-auto" />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center mt-12">
+                <!-- Card -->
+                <div class="card bg-base-100 border-[1px] border-[#00000026]">
+                    <figure class="pt-5">
+                        <img src="images/others/latest1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body pt-5">
+                        <h2 class="card-title text-3xl font-semibold">BMW S 1000 RR</h2>
+                        <p class="text-left text-base font-normal text-[#6C6C6C]">It is now hitting the next level of
+                            excellence by making it to the top 10 bikes in world, ten years after the original RR
+                            version enthralled the motorcycle market.</p>
+                        <div class="card-actions justify-start mt-8">
+                            <button class="btn btn-secondary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[1px] border-[#00000026]">
+                    <figure class="pt-5">
+                        <img src="images/others/latest2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body pt-5">
+                        <h2 class="card-title text-3xl font-semibold">Suzuki Hayabusa </h2>
+                        <p class="text-left text-base font-normal text-[#6C6C6C]">The new model is based on the
+                            Desmodromic technology, a feature that enables Ducati to produce the quickest prototypes in
+                            the premier motor racing class.</p>
+                        <div class="card-actions justify-start mt-8">
+                            <button class="btn btn-secondary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[1px] border-[#00000026]">
+                    <figure class="pt-5">
+                        <img src="images/others/latest3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body pt-5">
+                        <h2 class="card-title text-3xl font-semibold">Yamaha YZF R1M </h2>
+                        <p class="text-left text-base font-normal text-[#6C6C6C]">The new Yamaha YZF-R1M is one of the
+                            top 10 bikes in world. The new additions include semi-active Ohlins ERS, carbon fairing, NPZ
+                            fork, rear tyre widened.</p>
+                        <div class="card-actions justify-start mt-8">
+                            <button class="btn btn-secondary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Happy Clients -->
+        <section class="Featured_Bikes text-center px-5 lg:px-0">
+            <h2 class="text-5xl font-semibold mb-2">Happy <span class="text-[#E76F51]">Clients says</span></h2>
+            <div class="grid grid-cols-1 md:items-stretch md:grid-cols-2 lg:grid-cols-3 gap-11 items-center mt-12">
+                <!-- Card -->
+                <div class="card bg-base-100 border-[1px] border-[#00000026] space-y-6">
+                    <figure class="pt-5 w-1/2 self-center">
+                        <img src="images/others/user-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body space-y-4">
+                        <p class="text-base font-normal text-[#6C6C6C]">I ordered a summer sleeping bag and camping food
+                            and the items arrived fast (ordered on Saturday, received next Wednesday). The prices were
+                            the best I could find at the time of purchase and especially the sleeping bag was half the
+                            price compared to other eshops.</p>
+                        <div class="rating block">
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#E77C40]" checked />
+                        </div>
+                        <h3 class="text-sm text-[#23A6F0] font-semibold">Regina Miles</h3>
+                        <h3 class="text-sm text-[#252B42] font-semibold">Banker</h3>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[1px] border-[#00000026] space-y-6">
+                    <figure class="pt-5 w-1/2 self-center">
+                        <img src="images/others/user-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body space-y-4">
+                        <p class="text-base font-normal text-[#6C6C6C]">They have a good and wide assortment of items
+                            but delivery times are, my opinion, darn slow. They were also not able to help we with
+                            adding an item to the order even though I made contact with them long before the parcel was
+                            being sent.</p>
+                        <div class="rating block">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#E77C40]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#E77C40]" />
+                        </div>
+                        <h3 class="text-sm text-[#23A6F0] font-semibold">Tanjima Nur</h3>
+                        <h3 class="text-sm text-[#252B42] font-semibold">Banker</h3>
+                    </div>
+                </div>
+                <div class="card bg-base-100 border-[1px] border-[#00000026] space-y-6">
+                    <figure class="pt-5 w-1/2 self-center">
+                        <img src="images/others/user-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body space-y-4">
+                        <p class="text-base font-normal text-[#6C6C6C]">Great service, ordered, I had few questions
+                            about order, they answered very fast, got my order at time. Thanks Mantas!</p>
+                        <div class="rating block">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#E77C40]" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#E77C40]" checked />
+                        </div>
+                        <h3 class="text-sm text-[#23A6F0] font-semibold">Mst. Taniya</h3>
+                        <h3 class="text-sm text-[#252B42] font-semibold">Banker</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked Questions -->
+        <section class="Featured_Bikes text-center px-5 lg:px-0">
+            <h2 class="text-5xl font-semibold mb-2">Frequently Asked <span class="text-[#E76F51]">Questions</span></h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 mt-12 md:gap-5 lg:gap-0">
+                <img src="images/others/faq.png" alt="" class="self-center justify-self-center w-2/5 lg:w-3/4">
+                <div class="join join-vertical w-full space-y-3 text-left">
+                    <div class="collapse collapse-arrow join-item border px-6 py-5 border-[#D5E5FB]">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title font-[#383838] text-xl font-medium">What are the most important
+                            things I should know about riding a bike? </div>
+                        <div class="collapse-content font-[#7E848C] text-base font-normal">
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                                help you be a more focused and legally compliant bike rider.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border px-6 py-5 border-[#D5E5FB]">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title font-[#383838] text-xl font-medium">How can I tell if my helmet is
+                            old and I need a new one? </div>
+                        <div class="collapse-content font-[#7E848C] text-base font-normal">
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                                help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border px-6 py-5 border-[#D5E5FB]">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title font-[#383838] text-xl font-medium">My bike has been in storage is it
+                            safe to ride? </div>
+                        <div class="collapse-content font-[#7E848C] text-base font-normal">
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                                help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border px-6 py-5 border-[#D5E5FB]">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title font-[#383838] text-xl font-medium">What rules should I follow when
+                            riding my bike?</div>
+                        <div class="collapse-content font-[#7E848C] text-base font-normal">
+                            <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                                help you be a more focused and legally compliant bike rider. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br /><br /><br />
+    </main>
+</body>
+
+</html>
